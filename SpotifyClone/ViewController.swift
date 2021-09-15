@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  SpotifyClone
 //
-//  Created by Pedro Kanagusto on 15/09/21.
+//  Created by PedroJSMK on 15/09/21.
 //
 
 import UIKit
