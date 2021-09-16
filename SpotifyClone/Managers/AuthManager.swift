@@ -11,8 +11,8 @@ final class AuthManager {
     static let shared = AuthManager()
     
     struct Constants {
-        static let clientID = "f0e3e382a2c245aabf39321a369f5583"
-        static let clientSecret = "13d7872ae1914b4a896e45e4f5797e06"
+        static let clientID = " "
+        static let clientSecret = " "
     }
     private init() {}
     
