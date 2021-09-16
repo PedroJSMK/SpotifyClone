@@ -29,6 +29,7 @@
 		23604DD026F24FB900466C66 /* AudioTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23604DCF26F24FB900466C66 /* AudioTrack.swift */; };
 		23604DD226F24FC900466C66 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23604DD126F24FC900466C66 /* Artist.swift */; };
 		23604DD426F24FE700466C66 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23604DD326F24FE700466C66 /* UserProfile.swift */; };
+		23604DD626F3671C00466C66 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23604DD526F3671C00466C66 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		23604DCF26F24FB900466C66 /* AudioTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTrack.swift; sourceTree = "<group>"; };
 		23604DD126F24FC900466C66 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		23604DD326F24FE700466C66 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		23604DD526F3671C00466C66 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 				23604D9726F2496600466C66 /* AppDelegate.swift */,
 				23604D9926F2496600466C66 /* SceneDelegate.swift */,
 				23604DA026F2496900466C66 /* Assets.xcassets */,
+				23604DD526F3671C00466C66 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				23604DBA26F24E5E00466C66 /* AuthViewController.swift in Sources */,
 				23604D9826F2496600466C66 /* AppDelegate.swift in Sources */,
 				23604DD426F24FE700466C66 /* UserProfile.swift in Sources */,
+				23604DD626F3671C00466C66 /* Extensions.swift in Sources */,
 				23604DB626F24DF900466C66 /* LibraryViewController.swift in Sources */,
 				23604DD226F24FC900466C66 /* Artist.swift in Sources */,
 				23604DC426F24EE500466C66 /* PlaylistViewController.swift in Sources */,
