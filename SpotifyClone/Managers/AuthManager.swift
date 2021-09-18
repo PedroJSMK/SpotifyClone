@@ -13,9 +13,11 @@ final class AuthManager {
     private var refreshingToken = false
     
     struct Constants {
-         static let clientID = "ADD_Seu_Cliente_ID"
-        static let clientSecret = "ADD_Seu_Cliente_SECRET"
 
+        
+        static let clientID = "ADD_Seu_Cliente_ID"
+        static let clientSecret = "ADD_Seu_Cliente_SECRET"
+     // Inserir Client ID e Client Secret developer.spotify.com
         
             
             static let tokenAPIURL = "https://accounts.spotify.com/api/token"
@@ -62,7 +64,8 @@ final class AuthManager {
             code: String,
             completion: @escaping ((Bool) -> Void)
         ) {
-            // Get Token
+            // Get Token ********
+            
             guard let url = URL(string: Constants.tokenAPIURL) else {
                 return
             }
@@ -116,16 +119,17 @@ final class AuthManager {
 
         private var onRefreshBlocks = [((String) -> Void)]()
 
-        /// Supplies valid token to be used with API Calls
+        /// Fornece TOKEN valido para ser usado com chamadas de API ***
+    
         public func withValidToken(completion: @escaping (String) -> Void) {
             guard !refreshingToken else {
-                // Append the compleiton
+                // Append ***
                 onRefreshBlocks.append(completion)
                 return
             }
 
             if shouldRefreshToken {
-                // Refresh
+                // Refresh ***
                 refreshIfNeeded { [weak self] success in
                     if let token = self?.accessToken, success {
                         completion(token)
@@ -151,7 +155,7 @@ final class AuthManager {
                 return
             }
 
-            // Refresh the token
+            // Refresh token
             guard let url = URL(string: Constants.tokenAPIURL) else {
                 return
             }

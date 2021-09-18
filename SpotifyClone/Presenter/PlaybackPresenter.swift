@@ -107,7 +107,7 @@ extension PlaybackPresenter: PlayerViewControllerDelegate {
 
     func didTapForward() {
         if tracks.isEmpty {
-            // Not playlist or album
+            // N e lista de reproducao ou album
             player?.pause()
         }
         else if let player = playerQueue {
@@ -120,7 +120,8 @@ extension PlaybackPresenter: PlayerViewControllerDelegate {
 
     func didTapBackward() {
         if tracks.isEmpty {
-            // Not playlist or album
+            // N e lista ...
+            
             player?.pause()
             player?.play()
         }

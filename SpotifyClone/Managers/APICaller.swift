@@ -20,7 +20,7 @@ final class APICaller {
         case faileedToGetData
     }
 
-    // MARK: - Albums
+    // MARK: - Albuns
 
     public func getAlbumDetails(for album: Album, completion: @escaping (Result<AlbumDetailsResponse, Error>) -> Void) {
         createRequest(

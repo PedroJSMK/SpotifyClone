@@ -9,7 +9,7 @@ import UIKit
 import WebKit
 
 class AuthViewController: UIViewController, WKNavigationDelegate {
-    
+
     private let webView: WKWebView = {
         let prefs = WKWebpagePreferences()
         prefs.allowsContentJavaScript = true
@@ -44,8 +44,7 @@ class AuthViewController: UIViewController, WKNavigationDelegate {
             return
         }
 
-        // Exchange the code for access token
-        guard let code = URLComponents(string: url.absoluteString)?.queryItems?.first(where: { $0.name == "code"  })?.value else {
+         guard let code = URLComponents(string: url.absoluteString)?.queryItems?.first(where: { $0.name == "code"  })?.value else {
             return
         }
         webView.isHidden = true

@@ -8,11 +8,11 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
-    
+
     private let signInButton: UIButton = {
         let button = UIButton()
         button.backgroundColor = .white
-        button.setTitle("Sign In with Spotify", for: .normal)
+        button.setTitle("Fazer login Spotify", for: .normal)
         button.setTitleColor(.black, for: .normal)
         return button
     }()
@@ -86,12 +86,11 @@ class WelcomeViewController: UIViewController {
     }
 
     private func handleSignIn(success: Bool) {
-        // Log user in or yell at them for error
         guard success else {
             let alert = UIAlertController(title: "Oops",
-                                          message: "Something went wrong when signing in.",
+                                          message: "Algo deu errado ao fazer login.",
                                           preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
+            alert.addAction(UIAlertAction(title: "Sair", style: .cancel, handler: nil))
             present(alert, animated: true)
             return
         }
