@@ -2,7 +2,7 @@
 //  SettingsModels.swift
 //  SpotifyClone
 //
-//  Created by Pedro Kanagusto on 17/09/21.
+//  Created by PedroJSMK on 17/09/21.
 //
 
 import Foundation
