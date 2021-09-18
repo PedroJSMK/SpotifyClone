@@ -13,12 +13,11 @@ final class AuthManager {
     private var refreshingToken = false
     
     struct Constants {
-//        static let clientID = "ADD_Seu_Cliente_ID"
-//        static let clientSecret = "ADD_Seu_Cliente_SECRET"
+         static let clientID = "ADD_Seu_Cliente_ID"
+        static let clientSecret = "ADD_Seu_Cliente_SECRET"
 
         
-            static let clientID = "f0e3e382a2c245aabf39321a369f5583"
-            static let clientSecret = "13d7872ae1914b4a896e45e4f5797e06"
+            
             static let tokenAPIURL = "https://accounts.spotify.com/api/token"
         
             static let redirectURI = "https://github.com/PedroJSMK"
